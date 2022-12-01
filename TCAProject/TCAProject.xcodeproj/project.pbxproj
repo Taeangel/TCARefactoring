@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		868AA75729391AEB001693C7 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA75629391AEB001693C7 /* HomePage.swift */; };
+		868AA75729391AEB001693C7 /* MainCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA75629391AEB001693C7 /* MainCoinView.swift */; };
 		868AA75929391AEC001693C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75829391AEC001693C7 /* Assets.xcassets */; };
 		868AA75C29391AEC001693C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75B29391AEC001693C7 /* Preview Assets.xcassets */; };
 		868AA76429391B53001693C7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 868AA76329391B53001693C7 /* ComposableArchitecture */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		868AA75129391AEB001693C7 /* TCAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		868AA75629391AEB001693C7 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		868AA75629391AEB001693C7 /* MainCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinView.swift; sourceTree = "<group>"; };
 		868AA75829391AEC001693C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868AA75B29391AEC001693C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		868AA76B29391BED001693C7 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		868AA77329391D8C001693C7 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				868AA75629391AEB001693C7 /* HomePage.swift */,
+				868AA75629391AEB001693C7 /* MainCoinView.swift */,
 				868AA77429391DCC001693C7 /* MainRouteBuilder.swift */,
 			);
 			path = MainView;
@@ -181,7 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868AA76C29391BED001693C7 /* AppDependency.swift in Sources */,
-				868AA75729391AEB001693C7 /* HomePage.swift in Sources */,
+				868AA75729391AEB001693C7 /* MainCoinView.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,
 				868AA77029391C90001693C7 /* AppDelegate.swift in Sources */,
 				868AA77229391CC7001693C7 /* AppMain.swift in Sources */,

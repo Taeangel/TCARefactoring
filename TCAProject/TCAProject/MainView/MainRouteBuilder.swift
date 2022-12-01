@@ -8,13 +8,13 @@
 import LinkNavigator
 import SwiftUI
 
-struct HomeRouteBuilder: RouteBuilder {
+struct MainCoinRouteBuilder: RouteBuilder {
   var matchPath: String { "home" }
 
   var build: (LinkNavigatorType, [String: String], DependencyType) -> UIViewController? {
     { navigator, items, dependency in
       return WrappingController(matchingKey: matchPath) {
-        AnyView(HomePage(navigator: navigator))
+        AnyView(MainCoinView(navigator: navigator))
       }
     }
   }

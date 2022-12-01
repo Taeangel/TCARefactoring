@@ -7,7 +7,7 @@
 import SwiftUI
 import LinkNavigator
 
-struct HomePage: View {
+struct MainCoinView: View {
   let navigator: LinkNavigatorType
 
   var body: some View {
