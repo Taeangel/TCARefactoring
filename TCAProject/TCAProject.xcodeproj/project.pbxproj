@@ -17,6 +17,7 @@
 		868AA76C29391BED001693C7 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76B29391BED001693C7 /* AppDependency.swift */; };
 		868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76D29391C20001693C7 /* AppRouterGroup.swift */; };
 		868AA77029391C90001693C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76F29391C90001693C7 /* AppDelegate.swift */; };
+		868AA77229391CC7001693C7 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77129391CC7001693C7 /* AppMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		868AA76B29391BED001693C7 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		868AA76D29391C20001693C7 /* AppRouterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterGroup.swift; sourceTree = "<group>"; };
 		868AA76F29391C90001693C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		868AA77129391CC7001693C7 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				868AA76B29391BED001693C7 /* AppDependency.swift */,
 				868AA76D29391C20001693C7 /* AppRouterGroup.swift */,
 				868AA76F29391C90001693C7 /* AppDelegate.swift */,
+				868AA77129391CC7001693C7 /* AppMain.swift */,
 			);
 			path = LinkNavigator;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				868AA75729391AEB001693C7 /* ContentView.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,
 				868AA77029391C90001693C7 /* AppDelegate.swift in Sources */,
+				868AA77229391CC7001693C7 /* AppMain.swift in Sources */,
 				868AA75529391AEB001693C7 /* TCAProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
