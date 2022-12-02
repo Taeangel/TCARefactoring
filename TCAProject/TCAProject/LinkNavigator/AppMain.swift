@@ -19,11 +19,8 @@ struct AppMain: App {
   var body: some Scene {
     WindowGroup {
       navigator
-        .launch(paths: ["home"], items: [:]) // the argument of 'paths' becomes starting pages.
-        .onOpenURL { url in
-        // in case you need deep link navigation,
-        // deep links should be processed here.
-        }
+        .launch(paths: ["home"], items: [:])
     }
   }
 }
+

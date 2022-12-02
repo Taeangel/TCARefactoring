@@ -13,11 +13,11 @@
 		868AA76429391B53001693C7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 868AA76329391B53001693C7 /* ComposableArchitecture */; };
 		868AA76629391B53001693C7 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 868AA76529391B53001693C7 /* Dependencies */; };
 		868AA76929391B8A001693C7 /* LinkNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 868AA76829391B8A001693C7 /* LinkNavigator */; };
-		868AA76C29391BED001693C7 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76B29391BED001693C7 /* AppDependency.swift */; };
 		868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76D29391C20001693C7 /* AppRouterGroup.swift */; };
 		868AA77029391C90001693C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76F29391C90001693C7 /* AppDelegate.swift */; };
 		868AA77229391CC7001693C7 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77129391CC7001693C7 /* AppMain.swift */; };
 		868AA77529391DCC001693C7 /* MainRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77429391DCC001693C7 /* MainRouteBuilder.swift */; };
+		868AA777293A140F001693C7 /* AppSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA776293A140F001693C7 /* AppSideEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +25,11 @@
 		868AA75629391AEB001693C7 /* MainCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinView.swift; sourceTree = "<group>"; };
 		868AA75829391AEC001693C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868AA75B29391AEC001693C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		868AA76B29391BED001693C7 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		868AA76D29391C20001693C7 /* AppRouterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterGroup.swift; sourceTree = "<group>"; };
 		868AA76F29391C90001693C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868AA77129391CC7001693C7 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		868AA77429391DCC001693C7 /* MainRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteBuilder.swift; sourceTree = "<group>"; };
+		868AA776293A140F001693C7 /* AppSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSideEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +84,10 @@
 		868AA76A29391BDC001693C7 /* LinkNavigator */ = {
 			isa = PBXGroup;
 			children = (
-				868AA76B29391BED001693C7 /* AppDependency.swift */,
 				868AA76D29391C20001693C7 /* AppRouterGroup.swift */,
 				868AA76F29391C90001693C7 /* AppDelegate.swift */,
 				868AA77129391CC7001693C7 /* AppMain.swift */,
+				868AA776293A140F001693C7 /* AppSideEffect.swift */,
 			);
 			path = LinkNavigator;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868AA76C29391BED001693C7 /* AppDependency.swift in Sources */,
 				868AA75729391AEB001693C7 /* MainCoinView.swift in Sources */,
+				868AA777293A140F001693C7 /* AppSideEffect.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,
 				868AA77029391C90001693C7 /* AppDelegate.swift in Sources */,
 				868AA77229391CC7001693C7 /* AppMain.swift in Sources */,
