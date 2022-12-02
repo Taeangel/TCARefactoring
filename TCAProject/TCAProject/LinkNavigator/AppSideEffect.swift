@@ -16,17 +16,23 @@ fileprivate var navigator: LinkNavigatorType = LinkNavigator(
   dependency: AppDependency(),
   builders: AppRouterGroup().routers)
 
-public struct AppSideEffect: DependencyKey {
+ struct AppSideEffect: DependencyKey {
   
   let linkNavigator: LinkNavigatorType
   
-  public static var liveValue: AppSideEffect {
-    return .init(linkNavigator: navigator)
+  let mainCoin: MainCoinSideEffect
+  let setting: SettingSideEffect
+  
+   static var liveValue: AppSideEffect {
+    return .init(linkNavigator: navigator,
+                 mainCoin: MainCoinSideEffectLive(navigator: navigator),
+                 setting: SettingSideEffectLive(navigator: navigator))
   }
 }
 
 extension DependencyValues {
   var sideEffect: AppSideEffect {
     get {self[AppSideEffect.self] }
+    set { self[AppSideEffect.self] = newValue }
   }
 }

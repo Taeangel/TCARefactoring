@@ -16,8 +16,14 @@
 		868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76D29391C20001693C7 /* AppRouterGroup.swift */; };
 		868AA77029391C90001693C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA76F29391C90001693C7 /* AppDelegate.swift */; };
 		868AA77229391CC7001693C7 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77129391CC7001693C7 /* AppMain.swift */; };
-		868AA77529391DCC001693C7 /* MainRouteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77429391DCC001693C7 /* MainRouteBuilder.swift */; };
 		868AA777293A140F001693C7 /* AppSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA776293A140F001693C7 /* AppSideEffect.swift */; };
+		868AA779293A15D1001693C7 /* MainCoinCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA778293A15D1001693C7 /* MainCoinCore.swift */; };
+		868AA77B293A15E6001693C7 /* MainCoinRouteBbuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77A293A15E6001693C7 /* MainCoinRouteBbuilder.swift */; };
+		868AA77D293A1634001693C7 /* MainCoinSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA77C293A1634001693C7 /* MainCoinSideEffect.swift */; };
+		868AA785293A1B5F001693C7 /* SettingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA783293A1B5F001693C7 /* SettingCore.swift */; };
+		868AA786293A1B5F001693C7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA782293A1B5F001693C7 /* SettingView.swift */; };
+		868AA787293A1B5F001693C7 /* SettingSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA781293A1B5F001693C7 /* SettingSideEffect.swift */; };
+		868AA788293A1B5F001693C7 /* SettingRouteBbuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA784293A1B5F001693C7 /* SettingRouteBbuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +34,14 @@
 		868AA76D29391C20001693C7 /* AppRouterGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterGroup.swift; sourceTree = "<group>"; };
 		868AA76F29391C90001693C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868AA77129391CC7001693C7 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
-		868AA77429391DCC001693C7 /* MainRouteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouteBuilder.swift; sourceTree = "<group>"; };
 		868AA776293A140F001693C7 /* AppSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSideEffect.swift; sourceTree = "<group>"; };
+		868AA778293A15D1001693C7 /* MainCoinCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinCore.swift; sourceTree = "<group>"; };
+		868AA77A293A15E6001693C7 /* MainCoinRouteBbuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinRouteBbuilder.swift; sourceTree = "<group>"; };
+		868AA77C293A1634001693C7 /* MainCoinSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinSideEffect.swift; sourceTree = "<group>"; };
+		868AA781293A1B5F001693C7 /* SettingSideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSideEffect.swift; sourceTree = "<group>"; };
+		868AA782293A1B5F001693C7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		868AA783293A1B5F001693C7 /* SettingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCore.swift; sourceTree = "<group>"; };
+		868AA784293A1B5F001693C7 /* SettingRouteBbuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRouteBbuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				868AA76A29391BDC001693C7 /* LinkNavigator */,
-				868AA77329391D8C001693C7 /* MainView */,
+				868AA77329391D8C001693C7 /* MainCoin */,
+				868AA77E293A1AC5001693C7 /* Setting */,
 				868AA75829391AEC001693C7 /* Assets.xcassets */,
 				868AA75A29391AEC001693C7 /* Preview Content */,
 			);
@@ -92,13 +105,26 @@
 			path = LinkNavigator;
 			sourceTree = "<group>";
 		};
-		868AA77329391D8C001693C7 /* MainView */ = {
+		868AA77329391D8C001693C7 /* MainCoin */ = {
 			isa = PBXGroup;
 			children = (
 				868AA75629391AEB001693C7 /* MainCoinView.swift */,
-				868AA77429391DCC001693C7 /* MainRouteBuilder.swift */,
+				868AA778293A15D1001693C7 /* MainCoinCore.swift */,
+				868AA77C293A1634001693C7 /* MainCoinSideEffect.swift */,
+				868AA77A293A15E6001693C7 /* MainCoinRouteBbuilder.swift */,
 			);
-			path = MainView;
+			path = MainCoin;
+			sourceTree = "<group>";
+		};
+		868AA77E293A1AC5001693C7 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				868AA782293A1B5F001693C7 /* SettingView.swift */,
+				868AA783293A1B5F001693C7 /* SettingCore.swift */,
+				868AA781293A1B5F001693C7 /* SettingSideEffect.swift */,
+				868AA784293A1B5F001693C7 /* SettingRouteBbuilder.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +207,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				868AA75729391AEB001693C7 /* MainCoinView.swift in Sources */,
+				868AA779293A15D1001693C7 /* MainCoinCore.swift in Sources */,
 				868AA777293A140F001693C7 /* AppSideEffect.swift in Sources */,
+				868AA787293A1B5F001693C7 /* SettingSideEffect.swift in Sources */,
+				868AA788293A1B5F001693C7 /* SettingRouteBbuilder.swift in Sources */,
+				868AA77D293A1634001693C7 /* MainCoinSideEffect.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,
+				868AA786293A1B5F001693C7 /* SettingView.swift in Sources */,
+				868AA77B293A15E6001693C7 /* MainCoinRouteBbuilder.swift in Sources */,
 				868AA77029391C90001693C7 /* AppDelegate.swift in Sources */,
+				868AA785293A1B5F001693C7 /* SettingCore.swift in Sources */,
 				868AA77229391CC7001693C7 /* AppMain.swift in Sources */,
-				868AA77529391DCC001693C7 /* MainRouteBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

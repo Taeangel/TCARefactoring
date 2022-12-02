@@ -6,20 +6,21 @@
 //
 
 import SwiftUI
+import Dependencies
 import LinkNavigator
 
 @main
 struct AppMain: App {
-  @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
-
+  @Dependency(\.sideEffect) var sideEffect
+  
   var navigator: LinkNavigator {
-    appDelegate.navigator
+    sideEffect.linkNavigator as! LinkNavigator
   }
 
   var body: some Scene {
     WindowGroup {
       navigator
-        .launch(paths: ["home"], items: [:])
+        .launch(paths: ["main"], items: [:])
     }
   }
 }

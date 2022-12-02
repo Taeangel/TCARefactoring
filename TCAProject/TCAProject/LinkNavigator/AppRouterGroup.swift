@@ -10,6 +10,7 @@ import LinkNavigator
 struct AppRouterGroup {
   
   var routers: [RouteBuilder] { [
-    MainCoinRouteBuilder()
+    MainCoinRouteBuilder(),
+    SettingRouteBuilder()
   ] }
 }
