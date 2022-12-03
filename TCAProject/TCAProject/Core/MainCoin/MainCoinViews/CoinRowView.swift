@@ -9,9 +9,34 @@ import SwiftUI
 import ComposableArchitecture
 
 struct CoinRowView: View {
+  let coin: CoinModel
+  let showHoldingColumn: Bool
+  
   
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    HStack(spacing: 3) {
+      Text("\(coin.rank)")
+        .font(.caption)
+        .foregroundColor(Color.theme.secondaryText)
+      Text(coin.symbol)
+      
+      Spacer()
+      
+      VStack(alignment: .trailing) {
+        Text("\(coin.currentHoldingsValue)")
+          .bold()
+        Text("\(coin.currentHoldings ?? 0)")
+          .foregroundColor(Color.theme.accent)
+      }
+      
+      Spacer()
+      
+      VStack(alignment: .trailing) {
+        Text("\(coin.currentPrice)")
+        
+        Text("\(coin.priceChangePercentage24H ?? 0)")
+      }
+    }
   }
 }
 
@@ -19,6 +44,9 @@ struct CoinRowView: View {
 
 struct CoinRowView_Previews: PreviewProvider {
   static var previews: some View {
-    CoinRowView()
+    CoinRowView(coin: dev.coin, showHoldingColumn: true)
+    
+    CoinRowView(coin: dev.coin, showHoldingColumn: true)
+      .preferredColorScheme(.dark)
   }
 }
