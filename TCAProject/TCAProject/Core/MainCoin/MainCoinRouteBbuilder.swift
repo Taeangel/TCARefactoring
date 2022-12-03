@@ -14,7 +14,7 @@ struct MainCoinRouteBuilder: RouteBuilder {
   var build: (LinkNavigatorType, [String: String], DependencyType) -> UIViewController? {
     { navigator, items, dependency in
       return WrappingController(matchingKey: matchPath) {
-        AnyView(MainCoinView(store: .init(initialState: MainCoinReducer.State(),
+        AnyView(HomeView(store: .init(initialState: MainCoinReducer.State(),
                                           reducer: MainCoinReducer())) )
       }
     }

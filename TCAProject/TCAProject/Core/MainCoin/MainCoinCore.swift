@@ -4,17 +4,18 @@
 //
 //  Created by song on 2022/12/02.
 //
-
 import ComposableArchitecture
 
 struct MainCoinReducer: ReducerProtocol {
   struct State: Equatable {
     var paths: [String] = []
+    var showPortfolio: Bool = true
   }
   
   enum Action: Equatable {
-    case getPaths
-    case onTapSetting
+    case onAppear
+    case showPortfolioToggle
+    case bindShowPortfolio
   }
   
   @Dependency(\.sideEffect.mainCoin) var sideEffect
@@ -24,12 +25,15 @@ struct MainCoinReducer: ReducerProtocol {
     Reduce { state, action in
       
       switch action {
-      case .getPaths:
+      case .onAppear:
         state.paths = sideEffect.getPaths()
         return .none
         
-      case .onTapSetting:
-        sideEffect.toSettingView()
+      case .showPortfolioToggle:
+        state.showPortfolio.toggle()
+        return .none
+        
+      case .bindShowPortfolio:
         return .none
       }
     }

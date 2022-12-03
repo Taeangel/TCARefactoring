@@ -10,6 +10,7 @@ import LinkNavigator
 protocol MainCoinSideEffect {
   var getPaths: () -> [String] { get }
   var toSettingView: () -> Void { get }
+  
 }
 
 struct MainCoinSideEffectLive {
@@ -32,5 +33,7 @@ extension MainCoinSideEffectLive: MainCoinSideEffect {
   var toSettingView: () -> Void {
     { navigator.next(paths: ["setting"], items: [:], isAnimated: true) }
   }
+  
+
 }
  
