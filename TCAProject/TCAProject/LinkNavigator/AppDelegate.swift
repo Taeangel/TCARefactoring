@@ -10,7 +10,7 @@ import LinkNavigator
 
 final class AppDelegate: NSObject {
   var navigator: LinkNavigator {
-    LinkNavigator(dependency: AppDependency(), builders: AppRouterGroup().routers)
+    LinkNavigator(dependency: EmptyDependency(), builders: AppRouterGroup().routers)
   }
 }
 

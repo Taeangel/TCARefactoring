@@ -14,9 +14,11 @@ protocol SettingSideEffect {
 
 struct SettingSideEffectLive {
   let navigator: LinkNavigatorType
+  let service: ServiceProtocol
   
-  init(navigator: LinkNavigatorType) {
+  init(navigator: LinkNavigatorType, service: ServiceProtocol) {
     self.navigator = navigator
+    self.service = service
   }
 }
 
@@ -29,4 +31,3 @@ extension SettingSideEffectLive: SettingSideEffect {
     { navigator.back(isAnimated: true) }
   }
 }
- 

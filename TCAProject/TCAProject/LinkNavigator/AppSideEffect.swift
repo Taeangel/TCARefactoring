@@ -10,14 +10,22 @@ import Dependencies
 import Foundation
 
 
-struct AppDependency: DependencyType {}
+struct EmptyDependency: DependencyType {}
+
+struct ServiceDependency {
+  let service: ServiceProtocol = Service()
+}
+
+
 
 fileprivate var navigator: LinkNavigatorType = LinkNavigator(
-  dependency: AppDependency(),
+  dependency: EmptyDependency(),
   builders: AppRouterGroup().routers)
 
+fileprivate let serivceDependency =  ServiceDependency()
+
  struct AppSideEffect: DependencyKey {
-  
+      
   let linkNavigator: LinkNavigatorType
   
   let mainCoin: MainCoinSideEffect
@@ -26,7 +34,7 @@ fileprivate var navigator: LinkNavigatorType = LinkNavigator(
    static var liveValue: AppSideEffect {
     return .init(linkNavigator: navigator,
                  mainCoin: MainCoinSideEffectLive(navigator: navigator),
-                 setting: SettingSideEffectLive(navigator: navigator))
+                 setting: SettingSideEffectLive(navigator: navigator, service: serivceDependency.service))
   }
 }
 
@@ -35,4 +43,11 @@ extension DependencyValues {
     get {self[AppSideEffect.self] }
     set { self[AppSideEffect.self] = newValue }
   }
+}
+
+protocol ServiceProtocol {}
+
+struct Service: ServiceProtocol {
+  
+  
 }
