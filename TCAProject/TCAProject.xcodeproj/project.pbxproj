@@ -10,6 +10,7 @@
 		861CE80E293B1A82005C37D8 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE80D293B1A82005C37D8 /* NetworkingManager.swift */; };
 		861CE811293B1B31005C37D8 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE810293B1B31005C37D8 /* CoinDataService.swift */; };
 		861CE814293B1B69005C37D8 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE813293B1B69005C37D8 /* CoinModel.swift */; };
+		861CE81C293B2064005C37D8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE81B293B2064005C37D8 /* Color.swift */; };
 		868AA75729391AEB001693C7 /* MainCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA75629391AEB001693C7 /* MainCoinView.swift */; };
 		868AA75929391AEC001693C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75829391AEC001693C7 /* Assets.xcassets */; };
 		868AA75C29391AEC001693C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75B29391AEC001693C7 /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		861CE80D293B1A82005C37D8 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		861CE810293B1B31005C37D8 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		861CE813293B1B69005C37D8 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		861CE81B293B2064005C37D8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		868AA75129391AEB001693C7 /* TCAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868AA75629391AEB001693C7 /* MainCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoinView.swift; sourceTree = "<group>"; };
 		868AA75829391AEC001693C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,13 +66,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		861CE80B293A6E58005C37D8 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		861CE80C293B1A62005C37D8 /* NetworkingManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +91,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		861CE819293B1D54005C37D8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				868AA77329391D8C001693C7 /* MainCoin */,
+				868AA77E293A1AC5001693C7 /* Setting */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		861CE81A293B205A005C37D8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				861CE81B293B2064005C37D8 /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		868AA74829391AEB001693C7 = {
 			isa = PBXGroup;
 			children = (
@@ -115,12 +127,14 @@
 		868AA75329391AEB001693C7 /* TCAProject */ = {
 			isa = PBXGroup;
 			children = (
+				868AA76D29391C20001693C7 /* AppRouterGroup.swift */,
+				868AA76F29391C90001693C7 /* AppDelegate.swift */,
+				868AA77129391CC7001693C7 /* AppMain.swift */,
+				868AA776293A140F001693C7 /* AppSideEffect.swift */,
+				861CE81A293B205A005C37D8 /* Extension */,
 				861CE812293B1B4A005C37D8 /* Models */,
 				861CE80C293B1A62005C37D8 /* NetworkingManager */,
-				861CE80B293A6E58005C37D8 /* Network */,
-				868AA76A29391BDC001693C7 /* LinkNavigator */,
-				868AA77329391D8C001693C7 /* MainCoin */,
-				868AA77E293A1AC5001693C7 /* Setting */,
+				861CE819293B1D54005C37D8 /* Core */,
 				868AA75829391AEC001693C7 /* Assets.xcassets */,
 				868AA75A29391AEC001693C7 /* Preview Content */,
 			);
@@ -133,17 +147,6 @@
 				868AA75B29391AEC001693C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		868AA76A29391BDC001693C7 /* LinkNavigator */ = {
-			isa = PBXGroup;
-			children = (
-				868AA76D29391C20001693C7 /* AppRouterGroup.swift */,
-				868AA76F29391C90001693C7 /* AppDelegate.swift */,
-				868AA77129391CC7001693C7 /* AppMain.swift */,
-				868AA776293A140F001693C7 /* AppSideEffect.swift */,
-			);
-			path = LinkNavigator;
 			sourceTree = "<group>";
 		};
 		868AA77329391D8C001693C7 /* MainCoin */ = {
@@ -252,6 +255,7 @@
 				861CE811293B1B31005C37D8 /* CoinDataService.swift in Sources */,
 				868AA777293A140F001693C7 /* AppSideEffect.swift in Sources */,
 				868AA787293A1B5F001693C7 /* SettingSideEffect.swift in Sources */,
+				861CE81C293B2064005C37D8 /* Color.swift in Sources */,
 				868AA788293A1B5F001693C7 /* SettingRouteBbuilder.swift in Sources */,
 				868AA77D293A1634001693C7 /* MainCoinSideEffect.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,

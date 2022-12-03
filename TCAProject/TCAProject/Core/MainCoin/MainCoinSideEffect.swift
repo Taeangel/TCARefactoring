@@ -14,9 +14,13 @@ protocol MainCoinSideEffect {
 
 struct MainCoinSideEffectLive {
   let navigator: LinkNavigatorType
+  let coinDataService: coinServiceProtocol
   
-  init(navigator: LinkNavigatorType) {
+  init(navigator: LinkNavigatorType,
+       coinDataService: coinServiceProtocol
+  ) {
     self.navigator = navigator
+    self.coinDataService = coinDataService
   }
 }
 

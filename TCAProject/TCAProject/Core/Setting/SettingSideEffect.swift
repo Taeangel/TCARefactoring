@@ -14,9 +14,9 @@ protocol SettingSideEffect {
 
 struct SettingSideEffectLive {
   let navigator: LinkNavigatorType
-  let service: ServiceProtocol
+  let service: coinServiceProtocol
   
-  init(navigator: LinkNavigatorType, service: ServiceProtocol) {
+  init(navigator: LinkNavigatorType, service: coinServiceProtocol) {
     self.navigator = navigator
     self.service = service
   }
