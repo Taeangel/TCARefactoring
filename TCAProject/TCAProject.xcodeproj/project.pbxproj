@@ -14,6 +14,7 @@
 		861CE822293B46BF005C37D8 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE821293B46BF005C37D8 /* PortfolioView.swift */; };
 		861CE826293B4990005C37D8 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE825293B4990005C37D8 /* CircleButtonView.swift */; };
 		861CE829293B49A6005C37D8 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE828293B49A6005C37D8 /* CircleButtonAnimationView.swift */; };
+		861CE82B293B68A7005C37D8 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861CE82A293B68A7005C37D8 /* CoinRowView.swift */; };
 		868AA75729391AEB001693C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AA75629391AEB001693C7 /* HomeView.swift */; };
 		868AA75929391AEC001693C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75829391AEC001693C7 /* Assets.xcassets */; };
 		868AA75C29391AEC001693C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868AA75B29391AEC001693C7 /* Preview Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		861CE821293B46BF005C37D8 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		861CE825293B4990005C37D8 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		861CE828293B49A6005C37D8 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		861CE82A293B68A7005C37D8 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		868AA75129391AEB001693C7 /* TCAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868AA75629391AEB001693C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		868AA75829391AEC001693C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				868AA75629391AEB001693C7 /* HomeView.swift */,
+				861CE82A293B68A7005C37D8 /* CoinRowView.swift */,
 				861CE821293B46BF005C37D8 /* PortfolioView.swift */,
 			);
 			path = MainCoinViews;
@@ -295,6 +298,7 @@
 				868AA788293A1B5F001693C7 /* SettingRouteBbuilder.swift in Sources */,
 				868AA77D293A1634001693C7 /* MainCoinSideEffect.swift in Sources */,
 				868AA76E29391C20001693C7 /* AppRouterGroup.swift in Sources */,
+				861CE82B293B68A7005C37D8 /* CoinRowView.swift in Sources */,
 				868AA786293A1B5F001693C7 /* SettingView.swift in Sources */,
 				861CE80E293B1A82005C37D8 /* NetworkingManager.swift in Sources */,
 				861CE814293B1B69005C37D8 /* CoinModel.swift in Sources */,
